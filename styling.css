@@ -1,0 +1,579 @@
+
+@keyframes GRAY{
+
+	from{
+		filter: grayscale(10);
+	}
+	to{
+		filter: grayscale(0);
+	};
+}
+
+
+html{
+
+	height: 100%;
+	
+	
+}
+
+
+body{
+
+	animation-name: GRAY;
+	animation-duration: 3s;
+
+	margin: 0;
+	
+	min-width: 975px;
+
+
+	
+	
+}
+/*
+
+background-image: url("loader.gif");
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+*/
+
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+#loading-mask {
+	background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+
+@keyframes Intro{
+
+	from{ transform: scale(0);
+	opacity: 0; }
+	to{transform: scale(1);
+		opacity: 1;}
+}
+
+@keyframes about{
+
+	from{
+	transform: scale(0.9);
+	opacity: 0; }
+
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.box{
+	
+	min-width: 975px;
+	
+	transition: all 1s;
+	width: 100%;
+	height: 100%;
+
+
+	position: absolute;
+	display: block;
+
+	background-image: url("bgnew.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+
+.grid{
+
+
+	width: 70%;
+	height: 70%;
+
+
+	position: relative;
+	display: block;
+
+	background-image: url("bg2.gif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	
+	margin: auto;
+ margin: 0 auto;
+
+	top: 50%;
+	 
+  transform: translateY(-50%);
+
+
+}
+@keyframes gridgrad{
+	from{width: 0%;}
+	to{max-width: 45%;}
+}
+
+
+.grid2{
+		animation-name: gridgrad;
+	animation-duration: 3s;
+
+
+	width: 45%;
+	height: 100%;
+
+	position: relative;
+	display: block;
+
+	float: right;
+	
+
+   
+    background: -webkit-linear-gradient(120deg,#ffa3a3, #ff975b);
+    background: -o-linear-gradient(120deg, #ffa3a3, #ff975b);
+    background: -moz-linear-gradient(120deg,#ffa3a3, #ff975b); 
+    background: linear-gradient(120deg,#ffa3a3, #ff975b); 
+
+}
+
+
+
+
+.name{
+
+	
+		animation-name: flipInX;
+	animation-duration: 4s;
+
+	font-family: "Abril Fatface";
+	position: absolute;
+	display: inline-block;
+
+
+	letter-spacing: 3px;
+	font-size: 4.5vh;
+
+
+
+	color: #444444;
+	
+
+	margin: 25px;
+	margin-left: 70px;
+
+
+/*
+text-align: left;
+padding: 50px;
+*/
+
+}
+
+
+/*
+
+.name-full{
+
+	
+	font-family: "Prata";
+	display: inline-block;
+	position: absolute;
+
+
+		color: #e0c0a8;
+
+	margin: 90px;
+	margin-left: 50px;
+
+	
+	font-size: 15px;
+		font-size: 0.8vw;
+
+}
+
+*/
+
+@keyframes side{
+
+	from{height : 0;
+	
+	}
+	to{
+		height: 100%;
+	
+	}
+}
+
+.side{
+	animation-name: side;
+
+	animation-duration:3s;
+	width: 15px;
+	height: 100%;
+
+	position: absolute;
+	display: block;
+
+	
+	top: 0;
+
+	background: -webkit-linear-gradient(120deg,#ffa3a3, #ff975b , #ffa3a3, #ff975b);
+    background: -o-linear-gradient(120deg, #ffa3a3, #ff975b , #ffa3a3, #ff975b);
+    background: -moz-linear-gradient(120deg,#ffa3a3, #ff975b ,  #ffa3a3, #ff975b); 
+    background: linear-gradient(120deg,#ffa3a3, #ff975b,#ffa3a3, #ff975b); 
+
+ 
+}
+
+
+
+.about-box{
+
+	width: 250px;
+	height: 300px;
+
+
+
+	position: absolute;
+	display: block;
+	
+
+	margin: 70px;
+	margin-right: 850px;
+	margin-top: 100px;
+
+}
+.about{
+
+		
+		animation-name: about;
+	animation-duration: 3s;
+
+	font-family: "Din";
+	position: absolute;
+	font-size: 1.5vh;
+	color: #7F8469;
+	text-align: justify;
+
+
+
+
+	/*
+	margin: 80px;
+	margin-right: 850px;
+	margin-top: 200px;
+
+	*/
+
+
+}
+
+@keyframes insta{
+
+	from{width: 0%;
+	border-left: 0px solid;
+border-color: 	#ff7919;}
+	to{width: 15%;
+
+	border-left: 5px solid;
+	border-color: 	#ff7919;}
+}
+
+.instagram{
+
+
+
+	animation-name: insta;
+	animation-duration: 2s;
+
+
+
+
+	position: relative;
+	display: block;
+
+	width: 15%;
+	height: 3%;
+
+
+
+	margin: 0 auto;
+	top: 70%;
+	transform: translateY(-70%);
+	color: #c9c9c9;
+	font-family: Din;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+
+	text-align: center;
+
+
+	border-left: 5px solid;
+	border-color: 	#ff7919;
+
+
+-webkit-box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+-moz-box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+
+}
+
+
+
+.instagram p{
+	
+
+	margin: 0 auto;
+	top: 50%;
+	color: #c9c9c9;
+	font-family: Din;
+
+	
+	font-size: 1.5vh;
+
+	text-align: center;
+		
+
+	
+}
+
+.instagram a{
+	text-decoration: none;
+}
+
+
+.behance{
+
+
+	animation-name: insta;
+	animation-duration: 2s;
+
+
+
+
+	position: relative;
+	display: block;
+
+	width: 15%;
+	height: 3%;
+
+
+
+	margin: 0 auto;
+	top: 72%;
+	transform: translateY(-70%);
+	color: #c9c9c9;
+	font-family: Din;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+
+	text-align: center;
+
+
+	border-left: 5px solid;
+	border-color: 	#ff7919;
+
+
+-webkit-box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+-moz-box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+
+}
+
+
+
+.behance p{
+	
+
+	margin: 0 auto;
+	top: 50%;
+	color: #c9c9c9;
+	font-family: Din;
+
+	
+	font-size: 1.5vh;
+
+	text-align: center;
+		
+
+	
+}
+
+.behance a{
+	text-decoration: none;
+}
+
+.copyright{
+
+	animation-name: flipInX;
+	animation-duration: 5s;
+
+	font-size: 1vh;
+	font-family: Din;
+	position: absolute;
+	display: block;
+	color: #a8a8a8;
+	bottom: 0;
+	margin: 30px;
+	margin-left: 70px;
+		border-bottom: 2px solid;
+	border-color:#ffc09e;
+}
+
+.section1{
+
+	transition: all 1s;
+	width: 80%;
+	height: 200px;
+
+	display: block;
+	position: relative;
+
+
+	background-color: white;
+	margin: 0 auto;
+
+
+	margin-top: 10%;
+
+		-webkit-box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+	-moz-box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+	box-shadow: -5px 10px 87px 8px rgba(0,0,0,0.17);
+
+}
+.context-title{
+
+
+font-family: "Din";
+	position: absolute;
+	display:block;
+
+
+	letter-spacing: 3px;
+	font-size: 1.5vh;
+
+	margin: 20px;
+	margin-left: 40px;
+
+	color: #828282;
+}
+
+
+
+.whitespace{
+
+		animation-name: flipInX ;
+
+	animation-duration: 2s;
+
+
+	display: block;
+	position: relative;
+
+color: white;
+font-size: 1.5vh;
+letter-spacing: 100px;
+line-height: 100px;
+
+
+margin-left: 30px;
+
+	font-family: "Montserrat";
+	font-weight: 700;
+
+}
+
+
+
+
+/*
+.pattern{
+
+	
+animation-name: rotate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+
+	width: 100%;
+	height: 100%;
+
+
+	position: relative;
+	display: block;
+
+	background-image: url("pattern.png");
+
+	background-position: center;
+	background-size: 800px;
+
+	opacity: 0.4;
+
+	margin: 0;
+
+
+}
+*/
+@font-face{
+
+	font-family: Din;
+	src:url("DINPro-Regular_13937.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
